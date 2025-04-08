@@ -1,0 +1,25 @@
+.footer {
+    background-color: #f9f3ff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    color: #4b2b63;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .footer .social {
+    margin-top: 0.5rem;
+  }
+  
+  .footer .social a {
+    color: #4b2b63;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer .social a:hover {
+    text-decoration: underline;
+  }
+  

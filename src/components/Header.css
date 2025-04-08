@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 130px;
+  width: auto;
+}
+
+
+.nav a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  font-family: 'Slabo 27px', serif;
+  color: #4b2b63;
+  text-decoration: none;
+}
+
+
+.nav a:hover {
+  color: #000;
+}
+.portfolio-slide img, .grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}

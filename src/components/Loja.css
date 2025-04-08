@@ -1,0 +1,62 @@
+.loja {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+.loja h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4b296b;
+}
+
+.loja p {
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.produto {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.produto h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.produto p {
+  color: #4b296b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.produto a {
+  text-decoration: none;
+  color: white;
+  background: #4b296b;
+  padding: 10px 14px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.produto a:hover {
+  background: #7b3ea7;
+}

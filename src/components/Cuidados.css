@@ -1,0 +1,21 @@
+.cuidados {
+    padding: 40px;
+    background-color: #fdf7fd;
+    color: #4b2b63;
+  }
+  
+  .cuidados h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cuidados-texto h3 {
+    margin-top: 1.5rem;
+  }
+  
+  .cuidados-texto ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  

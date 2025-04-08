@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import Header from "./components/Header";
+import Portfolio from './components/Portfolio';
+import Agendamento from "./components/Agendamento";
+import Loja from "./components/Loja";
+import { initSmoothScroll } from './smoothScroll';
+import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Formulario from "./components/Formulario";
+import Cuidados from "./components/Cuidados";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    initSmoothScroll();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Portfolio />
+      <Agendamento />
+      <Loja />
+      <Footer />
+      <Formulario />
+      <Cuidados />
+
     </div>
   );
 }
 
 export default App;
+;
+
