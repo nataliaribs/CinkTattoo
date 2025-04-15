@@ -25,7 +25,7 @@ h1, h2, h3 {
 button {
   font-family: 'Slabo 27px', serif;
   background-color: var(--roxo-acai);
-  color: white;
+  color: rgb(119, 44, 44);
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;

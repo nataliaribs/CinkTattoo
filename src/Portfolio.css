@@ -1,0 +1,58 @@
+/* Estilo geral do portfólio */
+.portfolio {
+    padding: 4rem 2rem;
+    background-color: #f7f7f7; /* cor de fundo suave */
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6a0dcd; /* roxo suave */
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid para exibir as tatuadoras */
+  .tatuadoras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contêiner para as imagens */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajuste conforme necessário */
+  }
+  
+  .foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+    border-bottom: 4px solid #6a0dcd; /* linha de separação entre as imagens */
+  }
+  
+  .foto-tatuagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:1;
+  }
+  
