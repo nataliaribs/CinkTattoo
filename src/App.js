@@ -6,7 +6,9 @@ import Loja from "./components/Loja";
 import Formulario from "./components/Formulario";
 import Cuidados from "./components/Cuidados";
 import Footer from "./components/Footer";
-import { initSmoothScroll } from './smoothScroll.js';  // Certifique-se de criar o arquivo smoothScroll.js
+import Localizacao from "./components/Localizacao";
+import { initSmoothScroll } from './smoothScroll.js';
+
 import "./App.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -19,14 +21,35 @@ function App() {
   return (
     <div>
       <Header />
-      <Portfolio />
-      <Agendamento />
-      <Loja />
-      <Formulario />
-      <Cuidados />
+
+      {/* Todas as seções com os IDs corretos para scroll suave */}
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+
+      <section id="agendamento">
+        <Agendamento />
+      </section>
+
+      <section id="loja">
+        <Loja />
+      </section>
+
+      <section id="formulario">
+        <Formulario />
+      </section>
+
+      <section id="cuidados">
+        <Cuidados />
+      </section>
+
+      <section id="localizacao">
+        <Localizacao />
+      </section>
+
       <Footer />
     </div>
   );
 }
 
-export default App
+export default App;

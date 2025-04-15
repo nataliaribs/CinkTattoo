@@ -9,12 +9,12 @@ const tatuadoras = [
   },
   {
     nome: 'Gabriela Droguett',
-    estilo: 'especialista em escritas             .',
+    estilo: 'especialista em escritas             ',
     whatsapp: '5571991797921',
   },
   {
     nome: 'Milena Correia',
-    estilo: 'colorido, blackwork, realismo e fineline',
+    estilo: 'colorido, blackwork fineline',
     whatsapp: '5571992469494',
   },
   {
@@ -32,7 +32,7 @@ const tatuadoras = [
 export default function Agendamento() {
   return (
     <section id="agendamento" className="agendamento">
-      <h2>Agende sua Tatuagem</h2>
+      <h2>Orçamento e Agendamento</h2>
       <div className="cards">
         {tatuadoras.map((tatuadora, index) => (
           <div key={index} className="card">

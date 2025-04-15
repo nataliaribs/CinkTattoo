@@ -1,0 +1,35 @@
+.localizacao {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdfbfd;
+  }
+  
+  .localizacao h2 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .localizacao p {
+    margin-bottom: 20px;
+  }
+  
+  .map-container {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .botao-maps {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5e2750;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  

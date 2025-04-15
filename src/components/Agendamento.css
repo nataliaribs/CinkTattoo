@@ -2,6 +2,7 @@
   padding: 4rem 2rem;
   background-color: #faf6fd;
   text-align: center;
+  
 }
 
 .agendamento h2 {
@@ -12,8 +13,8 @@
 
 .cards {
   display:inline-flex;
- 
-  justify-content: center;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
   gap: 2rem;
 }
 
