@@ -1,58 +1,88 @@
-/* Estilo geral do portfólio */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6a0dcd; /* Fundo roxo */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
 .portfolio {
-    padding: 4rem 2rem;
-    background-color: #f7f7f7; /* cor de fundo suave */
-  }
-  
-  .portfolio h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #6a0dcd; /* roxo suave */
-    margin-bottom: 2rem;
-  }
-  
-  /* Grid para exibir as tatuadoras */
+  min-height: 100vh; /* Garante que o container ocupe pelo menos a altura da tela */
+  max-width: 1200px; /* Define um limite máximo para telas grandes */
+  width: 100%; /* Garante que ocupe toda a largura disponível */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 4rem 2rem;
+  background-color: transparent; /* Torna o fundo do container transparente */
+  box-sizing: border-box;
+}
+
+.tatuadoras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta o número de colunas automaticamente */
+  gap: 1.5rem; /* Espaçamento entre os itens */
+  padding: 2rem;
+  justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto; /* Centraliza o grid */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.foto-perfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+  border-bottom: 4px solid #6a0dcd;
+}
+
+.foto-tatuagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .foto-tatuagem {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
   .tatuadoras-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+    grid-template-columns: 1fr; /* Cada item ocupa uma linha */
+    padding: 1rem;
+    gap: 1rem;
   }
-  
+
   .card {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    max-width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    margin: 0 auto; /* Centraliza os cards */
   }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Contêiner para as imagens */
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajuste conforme necessário */
-  }
-  
-  .foto-perfil {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease-in-out;
-    border-bottom: 4px solid #6a0dcd; /* linha de separação entre as imagens */
-  }
-  
-  .foto-tatuagem {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top:1;
-  }
-  
+}

@@ -4,7 +4,7 @@
   --cinza-texto: #5a5a5a;
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: var(--bege-suave);
