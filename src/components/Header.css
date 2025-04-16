@@ -1,50 +1,45 @@
 .header {
- display:flex;
-  justify-content: ;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 160px;
+  padding: 10px 20px;
   border-bottom: 1px solid #e0e0e0;
-  background-color: rgb(255, 255, 255);
-  position:sticky;
- top: 0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
   z-index: 1000;
-  max-width: 100%;
-  box-sizing: border-box; 
-  ;
+  flex-wrap: wrap;
 }
 
 .logo img {
-  height: 150px;
+  height: 80px;
   width: auto;
 }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
 
 .nav a {
-  margin: 0 1rem; /* reduz o espaçamento lateral */
-  font-size: 25px; /* ajustado pra caber melhor */
-  text-align: center;
+  margin: 5px 10px;
+  font-size: 18px;
   font-family: 'Slabo 27px', serif;
   color: #4b2b63;
-
   text-decoration: none;
-  max-width: 100%;
-  white-space: nowrap; /* evita quebra indesejada de texto */
+  white-space: nowrap;
 }
 
 .nav a:hover {
   color: #aa14c2cf;
 }
-.portfolio-slide img, .grid-item img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  box-sizing: border-box;
-  
-}
+
 .insta-link {
-  margin-left: 1.5rem;
-  display:inline-flexbox;
+  margin-left: 1rem;
+  display: inline-flex;
   align-items: center;
   transition: transform 0.2s ease;
 }
@@ -52,4 +47,34 @@
 .insta-link:hover {
   transform: scale(1.2);
   color: #aa14c2cf;
+}
+
+.instagram-icon {
+  height: 24px;
+  width: auto;
+  margin-left: 5px;
+}
+
+/* RESPONSIVIDADE 📱 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin: 8px 0;
+  }
 }

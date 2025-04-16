@@ -13,7 +13,7 @@ function Header() {
       </div>
 
       <nav className="nav">
-        <a href="#portfolio">Portfólio</a>
+        <a href="#portfolio">Tatuadoras</a>
         <a href="#agendamento">Agendamento</a>
         <a href="#loja">Loja</a>
         <a href="#cuidados">Cuidados</a>
@@ -21,14 +21,16 @@ function Header() {
         <a href="#localizacao">Localização</a>
 
         {/* Ícone do Instagram */}
+        
         <a
-          href="https://www.instagram.com/cink.tattoo/#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="insta-link"
-        >
-          <FaInstagram size={40} />
-        </a>
+  className="insta-link"
+  href="https://instagram.com/cink_estudio"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+<img width="50" height="50" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
+</a>
+
       </nav>
     </header>
   );
