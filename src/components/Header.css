@@ -1,5 +1,5 @@
 .header {
-  display: flex;
+  display: contents;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -18,14 +18,15 @@
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   justify-content: center;
-  width: 100%;
-  margin-top: 10px;
+  align-items: center;
+  /*width: 100%;*/
+  margin-top: px;
 }
 
 .nav a {
-  margin: 5px 10px;
+  margin: 5px 5px;
   font-size: 18px;
   font-family: 'Slabo 27px', serif;
   color: #4b2b63;
@@ -58,8 +59,8 @@
 /* RESPONSIVIDADE 📱 */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+   
     padding: 10px;
   }
 
