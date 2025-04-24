@@ -1,37 +1,36 @@
 .portfolio {
-  padding: 40px 20px;
+  padding: 10% 2rem;
   background-color: #fafafa;
   text-align: center;
 }
 
 .portfolio h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   color: #5e2a84; /* tom roxo açaí */
 }
 
 .tatuadoras-grid {
   display:grid;
-  justify-content: center;
   
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   max-width: 100%;
-  padding: 0 20px;
+  padding: 0 60px;
   box-sizing: border-box;
   
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte quando não cabem */
+    justify-content: space-between; /* Distribui os cards igualmente na linha */
+    gap: 2rem;
+    
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 20px rgba(188, 105, 195, 0.457);
+  box-shadow: 0 12px 20px rgba(131, 23, 141, 0.927);
 }
 
 .image-container {
@@ -76,4 +75,14 @@
   font-weight: 500;
   margin: 16px;
   color: #333;
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Muda a direção dos cards para vertical */
+    align-items: center;/* Alinha os cards ao centro */
+  }
+
+  .card {
+    width: 90%; /* Ajusta a largura dos cards para 90% da tela */
+  }
 }

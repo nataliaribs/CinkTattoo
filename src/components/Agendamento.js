@@ -44,7 +44,7 @@ export default function Agendamento() {
               rel="noreferrer"
               className="botao"
             >
-              Falar no WhatsApp
+              Agendar
             </a>
           </div>
         ))}

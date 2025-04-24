@@ -29,6 +29,10 @@
   padding: 20px;
   max-width: 250px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para garantir que o conteúdo dentro do produto seja distribuído corretamente */
+  height: 100%;
 }
 
 .produto img {
@@ -38,10 +42,11 @@
 
 .produto h3 {
   font-size: 1.1rem;
-  margin: 10px 0 5px;
+  margin: px 0 5px;
 }
 
 .produto p {
+  display: block;
   color: #4b296b;
   font-weight: bold;
   margin-bottom: 10px;
@@ -51,10 +56,12 @@
   text-decoration: none;
   color: rgb(252, 250, 255);
   background: #4b296b;
-  padding: 10px 14px;
+  padding: 5px 14px;
   display: inline-block;
   border-radius: 8px;
   transition: background 0.3s;
+  align-self: center; /* Centraliza o botão no eixo horizontal */
+  margin-top:auto; /* Garante que o botão seja empurrado para a parte inferior do card */
 }
 
 .produto a:hover {

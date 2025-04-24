@@ -1,8 +1,7 @@
 .agendamento {
-  padding: 4rem 2rem;
+  padding: 0 3rem;
   background-color: #faf6fd;
   text-align: center;
-  
 }
 
 .agendamento h2 {
@@ -12,24 +11,29 @@
 }
 
 .cards {
-  display:inline-flex;
-  flex-wrap:wrap;
-  justify-content:space-evenly;
+  display: flex;
+  flex-wrap:wrap; /* Permite que os cards quebrem para a linha seguinte quando não cabem */
+  justify-content: space-between; /* Distribui os cards igualmente na linha */
   gap: 2rem;
+  
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Faz com que o botão fique na parte inferior do card */
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(127, 62, 62, 0.08);
+  box-shadow: 0 4px 10px rgba(127, 62, 62, 0.08);
   padding: 1.5rem;
-  width: 250px;
+  width: 230px; /* largura fixa para os cards */
   text-align: center;
+  min-height: 320px; /* iguala a altura dos cards */
   transition: transform 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .card h3 {
@@ -40,20 +44,31 @@
 .card p {
   color: #555;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .botao {
-  display: center;
-  background-color: #5e2a84;
+  background-color: rgb(107, 49, 148);
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
   transition: background-color 0.2s;
+  align-self: center;
+  margin-top: auto;
 }
 
 .botao:hover {
-  background-color: #7e43aa;
+  background-color: #6805b3cb;
+}
+
+/* Responsivo para telas menores (celular) */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Muda a direção dos cards para vertical */
+    align-items: center; /* Alinha os cards ao centro */
+  }
+
+  .card {
+    width: 90%; /* Ajusta a largura dos cards para 90% da tela */
+  }
 }
