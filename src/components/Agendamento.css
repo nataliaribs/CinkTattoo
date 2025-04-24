@@ -18,17 +18,17 @@
   
 }
 
-.card {
+.card,produto {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Faz com que o botão fique na parte inferior do card */
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(127, 62, 62, 0.08);
-  padding: 1.5rem;
+  padding: 1rem;
   width: 230px; /* largura fixa para os cards */
   text-align: center;
-  min-height: 320px; /* iguala a altura dos cards */
+  min-height: 280px; /* iguala a altura dos cards */
   transition: transform 0.2s;
 }
 

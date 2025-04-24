@@ -19,10 +19,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 20px;
 }
 
 .produto {
+ 
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 16px;
@@ -42,7 +44,7 @@
 
 .produto h3 {
   font-size: 1.1rem;
-  margin: px 0 5px;
+  margin: 1rem 5px;
 }
 
 .produto p {
@@ -50,10 +52,12 @@
   color: #4b296b;
   font-weight: bold;
   margin-bottom: 10px;
+  
 }
 
 .produto a {
   text-decoration: none;
+  
   color: rgb(252, 250, 255);
   background: #4b296b;
   padding: 5px 14px;
